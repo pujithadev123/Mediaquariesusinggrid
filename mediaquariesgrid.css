@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+body{
+    display: grid;
+   
+}
+.food-item{
+    width: 300px;
+    height: 350px;
+    border: 2px solid black;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+img{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+   
+}
+.food-item-part-2{
+    height: 20%;
+}
+.food-item-part-2_1,.food-item-part-2_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    padding: 10px;
+    background-color:lavender;
+}
+
+
+
+@media screen and (max-width:424px){
+    .food-items{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 100%;
+        padding: 10px;
+        background-color: lemonchiffon;
+
+    }
+   
+}
+   @media screen and (min-width:425px) and (max-width:768px){
+  
+    .food-items{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        justify-content:center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        background-color:lightcyan;
+    }
+   
+} 
+ 
+@media screen and (min-width:769px) and (max-width:1024px){
+    .food-items{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content:center;
+        align-items: center;
+        gap: 10px;
+        height: 100%;
+        padding: 10px;
+        background-color:lightpink;
+    }
+    
+}
+@media screen and (min-width:1025px) and (max-width:1440px){
+    .food-items{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 100%;
+        padding: 10px;
+       background-color:linen;
+    }
+}
+@media screen and (min-width:1441px){
+    .food-items{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 100%;
+        padding: 10px;
+        background-color: lightcoral;
+    }
+}  
